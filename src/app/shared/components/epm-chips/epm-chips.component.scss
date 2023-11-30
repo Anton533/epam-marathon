@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'mixins';
+
+:host {
+  @include font-medium;
+  // background-color: $color-lightest-grey;
+  // border: 1px solid $color-input-focused;
+  // display: flex;
+  // padding: 4px 16px 4px 4px;
+  // align-items: center;
+  // gap: 8px;
+  // border-radius: 32px;
+}
+
+.wrapper {
+  border: 1px solid $color-input-focused;
+  display: flex;
+  padding: 4px 16px 4px 4px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 32px;
+}
+
+.active {
+  background-color: $color-lightest-grey;
+}

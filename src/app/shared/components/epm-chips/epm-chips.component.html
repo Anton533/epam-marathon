@@ -1,0 +1,18 @@
+<button
+  class="wrapper"
+  type="button"
+  [ngClass]="{ active: isActive, editable: isEditable }"
+  (click)="onIsEditableClick()"
+>
+  @if (iconName) {
+  <div class="interests-icon">
+    <img [ngSrc]="iconName" width="32" height="32" alt="interest icon" />
+  </div>
+  }
+  <p class="description" [ngClass]="{ left: !iconName, right: !isEditable }">
+    {{ chips }}
+  </p>
+  @if (isEditable) {
+  <img class="active-icon" [ngSrc]="iconFileName" width="16" height="16" alt="action icon" />
+  }
+</button>
